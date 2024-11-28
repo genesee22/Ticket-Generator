@@ -1,0 +1,350 @@
+body {
+    background-color: #CE1212;
+    color: #EEEBDD;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+}
+
+.title {
+    font-family: "Jaro", sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.generator-menu {
+    background-color: #810000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 765px;
+    height: 230px;
+    margin: 0 auto; 
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.500);
+}
+
+#GM-phase-2 {
+    height: 260px;
+}
+
+.ticket {
+    width: 495px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+#T-phase-2 {
+    margin-top: -10px;
+}
+
+.control-menu {
+    width: 170px;
+    height: 170px;
+    margin-left: 25px;
+    justify-content: center;
+}
+
+#CM-phase-2 {
+    margin-top: 50px;
+}
+
+.control-btns {
+    width: 150px;
+    height: 40px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.control-btns:hover,
+.control-btns:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.05s;
+}
+
+.control-btns:hover {
+  transform: translateY(-1px);
+}
+
+.control-btns:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+#hw-btn {
+    background-color: #EEEBDD;
+    margin-top: 15px;
+}
+
+#ch-btn {
+    background-color: #EEEBDD;
+}
+
+#hw-btn:focus {
+    background-color: #FF6100;
+    transition: 0.2s;
+}
+
+#ch-btn:focus {
+    background-color: #01443C;
+    transition: 0.2s;
+}
+
+
+.editing-bar {
+    display: flex;
+    background: #B00000;
+    width: 690px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: -45px;
+    justify-content: center;
+}
+
+.editbar-elements {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    background-color: #CE1212;
+    color: #1B1717;
+    border-radius: 2px;
+    border: none;
+    margin-left: 12px;
+    margin-top: 6px;
+    height: 15px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.editbar-elements:focus {
+    outline: none;
+}
+
+.lines-between {
+    background-color: #810000;
+    width: 1px;
+    height: 15px;
+    margin-top: 7px;
+    margin-left: 12px;
+}
+
+#title-input {
+    width: 100px;
+    margin-left: 0px;
+}
+
+#title-size-select, #description-size-select{
+    width: 35px;
+}
+
+#fontOptions {
+    width: 80px;
+}
+
+#font-color-container {
+    width: 15px;
+    height: 15px;
+    background-color: #CE1212;
+    border-radius: 2px;
+    display: flex;
+}
+
+.font-color-select {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.font-color-img {
+    width: 6px;
+    height: 8px;
+    
+}
+
+#background-color-container {
+    width: 15px;
+    height: 15px;
+    background-color: #CE1212;
+    border-radius: 2px;
+    display: flex;
+}
+
+
+.background-color-select {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.background-color-img {
+    width: 8px;
+    height: 8px;   
+}
+
+.background-color-text {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 8px;
+    color: #1B1717;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 40%;
+    }
+    .title {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+    .generator-menu {
+        width: 410px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    #GM-phase-2 {
+        height: 250px;
+    }
+    
+    .ticket {
+        width: 370px;
+        height: 130px;
+        margin-top: 5%;
+    }
+
+    #T-phase-2 {
+        margin-top: 5%;
+    }
+    
+    .control-menu {
+        width: 370px;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 3%;
+    }
+
+    #CM-phase-2 {
+        margin-top: 50px;
+    }
+    
+    .control-btns {
+        width: 31%;
+        height: 70%;
+        margin-top: 0px;
+        margin-right: 2%;
+        font-size: 15px;
+        cursor: default;
+    }
+
+    #hw-btn {
+        margin-top: 0px;
+    }
+
+    #next-btn {
+        margin-right: 0%;
+    }
+
+    .editing-bar {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: -130px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .editbar-elements {
+        font-size: 6px;
+        background-color: #CE1212;
+        margin-left: 4px;
+        margin-top: 6px;
+        height: 50%;
+    }
+    
+    .lines-between {
+        margin-top: 6px;
+        margin-left: 4px;
+    }
+    
+    #title-input {
+        width: 60px;
+        height: 13px;
+        margin-left: 0px;
+    }
+
+    #description-input {
+        width: 100px;
+        height: 13px;
+    }
+    
+    #title-size-select, #description-size-select{
+        width: 30px;
+    }
+    
+    #fontOptions {
+        width: 60px;
+    }
+    
+    #font-color-container {
+        width: 15px;
+    }
+    
+    .font-color-select {
+        width: 15px;
+        cursor: default;
+    }
+    
+    .font-color-img {
+        width: 6px;
+        height: 8px;
+    }
+    
+    #background-color-container {
+        width: 15px;
+    }
+    
+    .background-color-select {
+        cursor: default;
+    }
+    
+    .background-color-img {
+        width: 8px;
+        height: 8px;   
+    }
+    
+    .background-color-text {
+        display: none;
+    }
+}
